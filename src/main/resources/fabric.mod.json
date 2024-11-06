@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lowhealthhomemod",
+	"version": "1.0.0",
+	"name": "Lowhealthhome",
+	"description": "Automatically teleports you to home when health is low.",
+	"authors": [
+		"sqyq"
+	],
+	"contact": {
+		"homepage": "https://github.com/sqyq/lowhealthhomemod",
+		"sources": "https://github.com/sqyq/lowhealthhomemod"
+	},
+	"license": "MIT",
+	"icon": "assets/lowhealthhomemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sqyq.lowhealthhomemod.LowhealthhomeMod"
+		],
+		"client": [
+			"net.sqyq.lowhealthhomemod.LowhealthhomeModClient"
+		],
+		"fabric-datagen": [
+			"net.sqyq.lowhealthhomemod.LowhealthhomeModDataGenerator"
+		]
+	},
+	"mixins": [
+		"lowhealthhomemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.0",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
